@@ -2,3 +2,105 @@ body,html {
     font: bold 14px/1.4 'Open Sans', arial, sans-serif;
     background-image: url('https://images.unsplash.com/photo-1563291074-2bf8677ac0e5?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MzcwODMxMA&ixlib=rb-1.2.1&q=85');
   }
+
+  #navbar {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    
+  }
+  ul { 
+    margin: 150px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    display: table;
+    width: 600px;
+    text-align: center;
+  }
+  li { 
+    display: table-cell; 
+    position: relative; 
+    padding: 15px 0;
+  }
+  a {
+    color: #AA00FF;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #EF9A9A;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+  #welcome-section {
+    height: 270px;
+  }
+  h1 {
+    font-size: 80px;
+    text-align: center;
+    padding: 0;
+    margin: 120px;
+    line-height: 0.5;
+    color: #EF9A9A; 
+    text-shadow: 6px 4px 2px #304FFE;
+  }
+  h2 {
+    font-size:30px;
+    text-align: center;
+    line-height: 0.5;
+    color: #304FFE; 
+  }
+  #skills {
+    margin: 250px;
+  }
+  #projects {
+    display: flex;
+    flex-direction: column;
+    flex-flow: relative;
+    text-align: center;
+    height: 600px;
+    margin-top: 250px;
+  }
+  .project-tile {
+    border: 3px dotted;
+    text-align: center;
+    height: 100px;
+    margin: 20px;
+  }
+  .project-tile:hover {
+    background-color: #EF9A9A;
+  }
+  #contact {
+    font-size: 20px;
+    margin: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #AA00FF;
+  }
+  #contact:hover {
+    color: #EF9A9A;
+  }
